@@ -1,7 +1,7 @@
-import { CHAT_GPT_API_KEY } from "./config.js";
+//import { CHAT_GPT_API_KEY } from "./config.js";
 import axios from 'axios';
 
-const apiKey = CHAT_GPT_API_KEY;
+const apiKey = process.env.CHAT_GPT_API_KEY;
 
 async function askChatGPT(articleContent) {
     const prompt = `Predict the stock's price direction in the short term and long term based on the company or news detail mentioned in the article. Provide a brief reason what lead to conclude each prediction first (1 or 2 sentences, very short). ` +
