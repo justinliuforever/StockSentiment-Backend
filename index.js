@@ -1,4 +1,5 @@
-import { PORT } from './config.js';
+import { PORT, mongoDBURL } from './config.js';
+
 import { StockAnalysis } from './models/stockAnalysisModel.js'; // Import StockAnalysis model
 import cors from 'cors';
 import dotenv from 'dotenv';
@@ -7,9 +8,6 @@ import mongoose from 'mongoose';
 import stockAnalysisRoutes from './routes/stockAnalysisRoutes.js'; // Import stockAnalysisRoutes
 dotenv.config();
 
-const mongoDBURL = 'mongodb+srv://justinliuforever:lqy20001025@stock-sentiment.jcprsjx.mongodb.net/?retryWrites=true&w=majority';
-
-console.log(mongoDBURL);
 const app = express();
 
 // Middleware for parsing JSON data
