@@ -68,7 +68,7 @@ async function periodicTask() {
 setInterval(periodicTask, 60000 * 60 * 3);
 
 // This is for scraping Content and askChatGPT, and then updating the database
-setInterval(fetchAndProcessNewsData, 60000);
+setInterval(fetchAndProcessNewsData, 60000 * 60 * 3);
 
 // Run the task immediately on startup
 periodicTask();
