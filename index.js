@@ -6,6 +6,7 @@ import dotenv from 'dotenv';
 import express from 'express';
 import mongoose from 'mongoose';
 import stockAnalysisRoutes from './routes/stockAnalysisRoutes.js'; // Import stockAnalysisRoutes
+
 dotenv.config();
 
 const app = express();
