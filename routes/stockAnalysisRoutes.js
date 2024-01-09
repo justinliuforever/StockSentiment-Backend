@@ -1,4 +1,4 @@
-import {POLYGON_API_KEY} from '../scraping/config.js';
+import {POLYGON_API_KEY} from '.././config.js';
 import { StockAnalysis } from '../models/stockAnalysisModel.js';
 import axios from 'axios';
 import express from 'express';
